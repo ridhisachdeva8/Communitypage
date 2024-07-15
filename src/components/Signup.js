@@ -80,7 +80,8 @@ export default function Signup(props) {
   }, []);
 
   return (
-    <div className="container">
+    <div className="signup-container" style={ {display: "flex",
+      height: "100vh"}}>
         {!isSmallScreen &&( <div className="image-section">
         <img src={img4} alt="Placeholder" />
       </div>)}
@@ -243,13 +244,14 @@ export default function Signup(props) {
         checked={formData.gender === "not-specified"}
         onChange={handleChange}
       />
-      <label   htmlFor="not-specified">Prefer not to say</label>
+      <label   htmlFor="not-specified" 
+      className="last_gender_option">Prefer not to say</label>
     </div>
   </div>
 </div>
 
-          <button type="submit">SIGN UP</button>
-          <p>Already Registered! <Link to="/login"> Login </Link></p>
+          <button className="SignupSubmit" type="submit">SIGN UP</button>
+          <p className="Signuptext">Already Registered! <Link to="/login"> Login </Link></p>
         </form>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import img6 from "./images/ill2.png";
 import { Link } from "react-router-dom";
+import { faLeftLong } from "@fortawesome/free-solid-svg-icons";
 
 export default function Login({ onSubmit }) {
   const [formData, setFormData] = useState({
@@ -54,7 +55,8 @@ export default function Login({ onSubmit }) {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
   return (
-    <div className="login-container">
+    <div className="login-container" style={ {display: "flex",
+      height: "100vh"}}>
       {!isSmallScreen && (
         <div className="image-section2">
           <img src={img6} alt="Placeholder" />
@@ -64,7 +66,7 @@ export default function Login({ onSubmit }) {
         <form className="login-form" onSubmit={handleSubmit}>
           <h2>Login</h2>
           <div className="form-group2">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" style={{marginLeft:"5.5%"}}>Email</label>
             <input
               type="email"
               id="email"
@@ -91,7 +93,7 @@ export default function Login({ onSubmit }) {
               required
             />
           </div>
-          <button type="submit">Login</button>
+          <button className="LoginSubmit" type="submit">Login</button>
         </form>
       </div>
     </div>
