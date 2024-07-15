@@ -386,7 +386,7 @@ nav {
   width: 199px;
   height: 75%;
   left: 80.4%;
-  top: 121%;
+  top: 121.5%;
   background: #8c4f6c;
   margin: 20px auto;
 }
@@ -588,7 +588,7 @@ nav {
 }
 .Signuptext{
   width: 100%;
-  margin-left: 20%;
+  margin-left: 30%;
 }
 
 #DisButton {
@@ -606,10 +606,26 @@ nav {
   background-color: #0056b3;
 }
 
+#InsButton {
+  width: 10%;
+  padding: 10px;
+  background-color: #8f05ecb6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 4%;
+}
+
+#InsButton:hover {
+  background-color: #0056b3;
+}
+
 .inspo-background {
   position: absolute;
   object-fit: cover;
-  width: 100vw;
+  width: 88vw;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -620,12 +636,13 @@ nav {
 .discover-background {
   position: absolute;
   object-fit: cover;
-  width: 100vw;
+  width: 88vw;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 0px;
+  margin-left: 0%;
 }
 
 .heading {
@@ -810,8 +827,10 @@ nav {
 
 .left img {
   max-width: 100%;
-  height: auto;
+ 
+  height: 40vh;
 }
+
 
 .right {
   flex: 1;
@@ -878,6 +897,14 @@ nav {
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
 }
+.post-actions{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  width: 83%;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
 
 
   .action-button {
@@ -885,6 +912,20 @@ nav {
     border: none;
     font-size: 20px;
     color: black;
+  }
+  .action-button p{
+    color: black;
+    font-size: 10px;
+  }
+  .action-button2 {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: black;
+  }
+  .action-button2 p{
+    color: black;
+    font-size: 10px;
   }
 
   .leftB{
@@ -931,4 +972,36 @@ nav {
   .footer__bottom {
     margin-top: 20px;
     font-size: 14px;
+  }
+  
+  .leaderboard-container {
+    background-color: #ff52aa9c;
+    padding: 20px;
+    max-width: 108%;
+    height: 45vh;
+  }
+  
+  .title {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .th {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .td {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
   }

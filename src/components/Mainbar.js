@@ -63,22 +63,24 @@ export default function Mainbar({onJoin}) {
         <div className="rectangle">
 <Link to="/inspiration" className="link-no-highlight">
 <div className="ellipse1">
-          <img src={image1} alt="" />
+          <img src={image1} alt="inspiration" />
         </div>
         <span className="ellipse-text">Inspiration</span>
 </Link>
        
 <Link to="/discovery" className="link-no-highlight">
 <div className="ellipse2">
-          <img src={image2} alt="" />
+          <img src={image2} alt="discovery" />
         </div>
         <span className="ellipse-text">Discovery</span>
 </Link>
-        
+        <Link to="/leaderboard" className="link-no-highlight">
         <div className="ellipse3">
-          <img src={image3} alt="" />
+          <img src={image3} alt="top-pick" />
         </div>
         <span className="ellipse-text">Top-pick</span>
+        
+        </Link>
         </div>
        <Footer/>
       </div>

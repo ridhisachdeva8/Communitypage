@@ -21,6 +21,14 @@ export default function Inspiration() {
     setDescription(event.target.value);
   };
 
+  const handleSubmit = () => {
+   
+    console.log("Images:", images);
+    console.log("Description:", description);
+    
+    setImages([]);
+    setDescription("");
+  };
   return (
     <div
       className="inspo-background"
@@ -62,6 +70,7 @@ export default function Inspiration() {
                 value={description}
                 onChange={handleDescriptionChange}
               />
+                <button id="InsButton" onClick={handleSubmit} className="submit-button2">Submit</button>
             </div>
           
         </div>

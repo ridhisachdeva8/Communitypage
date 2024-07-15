@@ -18,10 +18,10 @@ export default function DiscoverYourLook() {
     setDescription(event.target.value);
   };
   const handleSubmit = () => {
-    // Perform submission logic here, e.g., sending data to backend or processing
+  
     console.log("Images:", images);
     console.log("Description:", description);
-    // Clear form after submission
+    
     setImages([]);
     setDescription("");
   };

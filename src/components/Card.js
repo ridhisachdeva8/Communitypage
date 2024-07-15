@@ -27,6 +27,20 @@ export default function Card() {
       <div className="postCard">
         <div className="left">
         <img src={pimage} alt="Post Image according to the description." />
+        <div className="post-actions">
+        <button className="action-button2" onClick={handleLikeClick}>
+          <FontAwesomeIcon icon={liked ? faHeartSolid : faHeart} style={{ color: liked ? 'red' : 'inherit' }} />
+          <p> 25 Like</p>
+        </button>
+        <button className="action-button2">
+          <FontAwesomeIcon icon={faComment} />
+          <p>4 Comment</p>
+        </button>
+        <button className="action-button2">
+          <FontAwesomeIcon icon={faShareSquare} />
+          <p>2 Share</p>
+        </button>
+        </div>
         </div>
         <div className="right">
         <span>
@@ -46,8 +60,8 @@ export default function Card() {
         </div>
       <div className="rightB">
       <div className="blog-header">
-      
         <img src={post3} alt="profile" className="profile-pic" />
+       
         <span className="username">Username</span>
       </div>
       <Carousel>
@@ -68,12 +82,15 @@ export default function Card() {
       <div className="blog-actions">
       <button className="action-button" onClick={handleLikeClick}>
           <FontAwesomeIcon icon={liked ? faHeartSolid : faHeart} style={{ color: liked ? 'red' : 'inherit' }} />
+          <p> 25 Like</p>
         </button>
         <button className="action-button">
           <FontAwesomeIcon icon={faComment} />
+          <p>4 Comment</p>
         </button>
         <button className="action-button">
           <FontAwesomeIcon icon={faShareSquare} />
+          <p>2 Share</p>
         </button>
       </div>
     </div>

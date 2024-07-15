@@ -8,6 +8,7 @@ import Mainbar from './components/Mainbar';
 import Signup from './components/Signup';
 import Inspiration from './components/Inspiration';
 import Discovery from './components/Discovery';
+import Leaderboard from './components/Leaderboard';
 import React, { useState } from "react";
 
 import { BrowserRouter,Route, Routes } from "react-router-dom";
@@ -31,6 +32,7 @@ function App() {
         {<Mainbar/>}></Route>
          <Route exact path="/inspiration" element={<Inspiration/>}></Route>
          <Route exact path="/discovery" element={<Discovery/>}></Route>
+         <Route exact path="/leaderboard" element={<Leaderboard/>}></Route>
         </Routes> 
       </div>
       </BrowserRouter>
